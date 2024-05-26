@@ -9,7 +9,7 @@ job('SeedJob2') {
   }
   steps {
   	dsl {
-  		external('folder.jenkins')
+        external('folder2/folder.jenkins')
   	}
   }
 }
