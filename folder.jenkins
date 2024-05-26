@@ -1,4 +1,2 @@
 folder("folder1")
 folder("folder1/subfolder")
-
-folder("folder2")
