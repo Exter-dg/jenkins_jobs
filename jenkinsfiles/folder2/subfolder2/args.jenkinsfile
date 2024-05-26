@@ -1,6 +1,6 @@
 pipeline {
     // TODO Add execution on Kubernetes
-
+    agent: any
     stages {
         stage('Hello') {
             steps {
