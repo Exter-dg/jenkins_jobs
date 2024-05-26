@@ -1,0 +1,15 @@
+job('SeedJob2') {
+  scm {
+  	git {
+        branch('master')
+        remote {
+            url('https://github.com/Exter-dg/jenkins_jobs.git')
+        }
+    }
+  }
+  steps {
+  	dsl {
+  		external('folder.jenkins')
+  	}
+  }
+}
