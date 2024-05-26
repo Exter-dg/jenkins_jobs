@@ -1,4 +1,4 @@
-job('SeedJob2') {
+job('folder1/subfolder/SeedJob2') {
   scm {
   	git {
         branch('master')
