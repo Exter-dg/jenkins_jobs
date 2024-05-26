@@ -1,0 +1,14 @@
+pipeline {
+    // TODO Add execution on Kubernetes
+
+    stages {
+        stage('Hello') {
+            steps {
+                sh('echo "Hello" > hello.txt')
+                echo "Hello World"
+                sh('ls -lrth')
+                sh('cat hello.txt')
+            }
+        }
+    }
+}

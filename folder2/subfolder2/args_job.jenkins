@@ -1,0 +1,15 @@
+pipelineJob('folder2/subfolder2/args') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    branch('master')
+                    remote {
+                        url('https://github.com/Exter-dg/jenkins_jobs.git')
+                    }
+                }
+            }
+            scriptPath('jenkinsfiles/folder2/subfolder2/args.jenkinsfile')
+        }
+    }
+}
