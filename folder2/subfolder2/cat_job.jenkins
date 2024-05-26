@@ -1,4 +1,4 @@
-job('folder1/subfolder/SeedJob2') {
+job('folder2/subfolder2/cat') {
   scm {
   	git {
         branch('master')
@@ -8,9 +8,6 @@ job('folder1/subfolder/SeedJob2') {
     }
   }
   steps {
-  	dsl {
-        external('folder2/folder.jenkins')
-        external('folder2/**/*_job.jenkins')
-  	}
+  	shell('cat folder.jenkins')
   }
 }

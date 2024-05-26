@@ -1,0 +1,5 @@
+job('folder2/subfolder1/hello') {
+  steps {
+  	shell('echo Hello World')
+  }
+}
